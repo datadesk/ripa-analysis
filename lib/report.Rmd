@@ -1,0 +1,112 @@
+---
+params:
+  state: ""
+  city: ""
+---
+
+
+```{r setup, echo = FALSE}
+opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+city <- params$city
+state <- params$state
+
+read_chunk("report.R", labels = "report")
+```
+
+```{r report}
+```
+
+---
+title: `r title`
+---
+
+\begin{center}
+2017 5 year ACS population estimate: `r comma_num(population)`
+
+`r comma_num(total_rows)` rows from `r date_range[1]` to `r date_range[2]`
+\end{center}
+
+```{r by_type_table, fig.align = 'left'}
+by_type_table
+```
+
+```{r null_rates_tables}
+null_rates_table
+```
+
+```{r by_year_plot}
+by_year_plot
+```
+
+```{r by_year_by_month_plot, fig.height = 10}
+by_year_by_month_plot
+```
+
+```{r by_year_by_day_plot, fig.height = 10}
+by_year_by_day_plot
+```
+
+```{r by_year_by_day_of_week_plot, fig.height = 10}
+by_year_by_day_of_week_plot
+```
+
+```{r by_year_by_hour_of_day, fig.height = 10}
+display_if_exists("by_year_by_hour_of_day_plot")
+```
+
+```{r race_pct_plot}
+display_if_exists("race_pct_plot")
+```
+
+```{r reason_for_stop_top_20_plot, fig.height = 15, fig.width = 10}
+display_if_exists("reason_for_stop_top_20_plot")
+```
+
+```{r search_types_plot}
+display_if_exists("search_types_plot")
+```
+
+Search conducted: `r search_conducted_pct`
+
+Contraband found (all stops): `r contraband_found_pct`
+
+Contraband found (where search conducted): `r predicated_contraband_found_pct`
+
+```{r plot_props_by_race}
+display_if_exists("search_conducted_by_race_plot")
+display_if_exists("contraband_found_by_race_plot")
+display_if_exists("predicated_contraband_found_by_race_plot")
+display_if_exists("predicated_contraband_drugs_by_race_plot")
+display_if_exists("predicated_contraband_weapons_by_race_plot")
+```
+
+```{r outcome_by_race_plot, fig.height = 10}
+display_if_exists("outcome_by_race_plot")
+```
+
+\newpage
+
+\begin{center}
+\textbf{Metadata}
+\end{center}
+
+```{r loading_problems_count_table}
+display_if_exists("loading_problems_count_table")
+```
+
+```{r loading_problems_random_sample_sorted_table}
+display_if_exists("loading_problems_random_sample_sorted_table")
+```
+
+```{r enforce_types_table}
+enforce_types_table
+```
+
+```{r correct_predicates_table}
+correct_predicates_table
+```
+
+```{r sanitize_table}
+sanitize_table
+```
