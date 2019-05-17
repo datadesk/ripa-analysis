@@ -395,7 +395,7 @@ plt_ppc_rates <- function(
       legend.title = element_blank(),
       legend.background = element_rect(fill = 'transparent')
     ) +
-    scale_color_manual(values=c('black','red','blue')) +
+  #  scale_color_manual(values=c('black','red','blue')) +
     guides(size=FALSE) +
     labs(title = title)
   plt
