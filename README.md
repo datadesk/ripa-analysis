@@ -16,6 +16,8 @@ Such searches — conducted as condition of probation or parole, after an arrest
 
 We cloned the Stanford repository and ran our own analysis. We then later shared the LAPD data with Stanford data scientist Amy Shoemaker who was kind enough to run the LAPD through the threshold test model. She created a hierarchy filter to flag searches as discretionary or non-discretionary. The filter excludes stops where non-discretionary searches were the primary reason for the police action and categorizes those with multiple reasons for a search. So if a stop included both a consent search and a vehicle inventory search it was included in the analysis because a consent search is considered discretionary and given a higher rank in the hierarchy model. Shoemaker's findings for all searches and discretionary searches were consistent with our initial results, which showed lower search thresholds for non-whites.
 
+The code contained in this notebook was written by the SOPP and customized for the LAPD dataset by Shoemaker. Times reporters Ben Poston and Ryan Menezes conducted the analysis.
+
 ## Required System Packages
 
 ### All Systems
