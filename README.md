@@ -1,6 +1,6 @@
 # LAPD Search Threshold Test
 
-## Developed by the Stanford Open Policing Project (SOPP)
+## Developed by the Stanford Open Policing Project
 
 ### 
 
