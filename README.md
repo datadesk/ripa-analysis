@@ -4,7 +4,7 @@
 
 ###
 
-<b>By Ben Poston and Ryan Menezes<b>
+<b>By Ben Poston and Ryan Menezes</b>
 
 In consultation with the Stanford Open Policing Project, a Los Angeles Times analysis found that LAPD officers search black and Latinos far more often than whites during traffic stops even though whites are more likely to be found with illegal items.
 
