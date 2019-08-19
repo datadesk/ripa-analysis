@@ -315,7 +315,8 @@ stan_threshold_test <- function(
       max_treedepth = nuts_max_tree_depth
     ),
     cores = n_cores,
-    init = initialization_method,
+    #init = initialization_method,
+    init = "random", seed = sample.int(.Machine$integer.max, 1), 
     iter = n_iter,
     refresh = n_iter_per_progress_update,
     warmup = n_iter_warmup
