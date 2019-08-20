@@ -6,8 +6,6 @@
 
 <b>By Ben Poston and Ryan Menezes</b>
 
-<img src="https://www.dropbox.com/s/h2b6s5huunvs14c/Screen%20Shot%202019-06-17%20at%206.05.47%20PM.png?dl=1">
-
 In consultation with the Stanford Open Policing Project, a Los Angeles Times analysis found that LAPD officers search black and Latinos far more often than whites during traffic stops even though whites are more likely to be found with illegal items.
 
 To report the story, we filed an open records request and obtained 10 months worth of traffic stop data collected by the LAPD under the California Racial and Identity Profiling Act, which went into effect last summer.
@@ -25,3 +23,5 @@ The code contained in this notebook was written by the SOPP and customized for t
 This code uses two data sets. The first one was the <a href=https://www.dropbox.com/s/hxqglesiofk3o0z/RIPA_MASTER_July_April.csv?dl>detailed data</a> collected by LAPD to comply with the state's Racial and Identity Profiling Act, which went effect in 2018. 
 
 The second is a data set -- available on the city's <a href=https://data.lacity.org/A-Safe-City/Vehicle-and-Pedestrian-Stop-Data-2010-to-Present/ci25-wgt7>data portal</a> -- includes information on the division of the responding officer. The Threshold Test requires a subgeography like a police division to be able to identify differences in search thresholds across an entire city.
+
+<img src= "https://github.com/datadesk/ripa-analysis/blob/master/LAPD%20Search%20Graphic.png" width="281" height="500">
