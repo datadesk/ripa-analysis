@@ -1,7 +1,5 @@
 # LAPD Search Threshold Test
 
-## Developed by the Stanford Open Policing Project
-
 ###
 
 <b>By Ben Poston and Ryan Menezes</b>
