@@ -4,7 +4,7 @@
 
 <b>By Ben Poston and Ryan Menezes</b>
 
-In consultation with the Stanford Open Policing Project, a Los Angeles Times analysis found that LAPD officers search black and Latinos far more often than whites during traffic stops even though whites are more likely to be found with illegal items.
+In consultation with the Stanford Open Policing Project, a Los Angeles Times analysis found that LAPD officers search blacks and Latinos far more often than whites during traffic stops even though whites are more likely to be found with illegal items.
 
 <img src= "https://github.com/datadesk/ripa-analysis/blob/master/LAPD%20Search%20Graphic.png" ALIGN="right" width="337" height="600">
 
@@ -16,10 +16,10 @@ The analysis showed that officers had a lower standard of evidence when deciding
 
 Such searches — conducted as condition of probation or parole, after an arrest was made, as part of a search warrant or during an inventory of an impounded vehicle — don’t capture whether officers demonstrate bias, experts said. Those "non-discretionary" searches can also lower the rates at which officers find contraband during searches.
 
-We cloned the Stanford repository and ran our own analysis. We then later shared the LAPD data with Stanford data scientist Amy Shoemaker who was kind enough to run the LAPD through the <a href=https://5harad.com/papers/threshold-test.pdf>threshold test model</a>. She created a hierarchy filter to flag searches as discretionary or non-discretionary. The filter excludes stops where non-discretionary searches were the primary reason for the police action and categorizes those with multiple reasons for a search. So if a stop included both a consent search and a vehicle inventory search it was included in the analysis because a consent search is considered discretionary and given a higher rank in the hierarchy model. Shoemaker's findings for all searches and discretionary searches were consistent with our initial results, which showed lower search thresholds for non-whites.
+We cloned the Stanford repository and ran our own analysis. We then later shared the LAPD data with Stanford data scientist Amy Shoemaker who was kind enough to run the LAPD data through the <a href=https://5harad.com/papers/threshold-test.pdf>threshold test model</a>. She created a hierarchy filter to flag searches as discretionary or non-discretionary. The filter identifies stops where non-discretionary searches were the primary reason for the police action and categorizes those with multiple reasons for a search. If a stop included both a consent search and a vehicle inventory search it was categorized as discretionary in the analysis because a consent search is considered discretionary and given a higher rank in the hierarchy model. Shoemaker's findings for all searches and discretionary searches were consistent with our initial results, which showed lower search thresholds for non-whites.
 
-The code contained in this notebook was written by the SOPP and customized for the LAPD dataset by Shoemaker. We downloaded the SOPP code from their <a href=https://github.com/stanford-policylab/opp>Github page</a>.
+The code contained in this notebook was written by the SOPP and customized for the LAPD dataset by Shoemaker and annotated by the LA Times. We downloaded the SOPP code from their <a href=https://github.com/stanford-policylab/opp>Github page</a>.
 
-This code uses two data sets. The first one was the <a href=https://www.dropbox.com/s/hxqglesiofk3o0z/RIPA_MASTER_July_April.csv?dl>detailed data</a> collected by LAPD to comply with the state's Racial and Identity Profiling Act, which went effect in 2018. 
+This code uses two data sets. The first one was the <a href=https://www.dropbox.com/s/fdpk89gap9mc7ow/RIPA_MASTER_July_April.csv?dl>detailed data</a> collected by LAPD to comply with the state's Racial and Identity Profiling Act, which went effect in 2018. 
 
 The second is a data set -- available on the city's <a href=https://data.lacity.org/A-Safe-City/Vehicle-and-Pedestrian-Stop-Data-2010-to-Present/ci25-wgt7>data portal</a> -- includes information on the police division of the responding officer. The Threshold Test requires a subgeography like a police division to be able to identify differences in search thresholds across an entire city.
