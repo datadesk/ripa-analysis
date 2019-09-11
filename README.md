@@ -6,6 +6,8 @@
 
 In consultation with the Stanford Open Policing Project, a Los Angeles Times analysis found that LAPD officers search blacks and Latinos far more often than whites during traffic stops even though whites are more likely to be found with illegal items.
 
+<img src= "https://github.com/datadesk/ripa-analysis/blob/master/LAPD%20Search%20Graphic.png" ALIGN="right" width="337" height="600">
+
 To report the story, we filed an open records request and obtained 10 months worth of traffic stop data collected by the LAPD under the California Racial and Identity Profiling Act, which went into effect last summer.
 
 We used a statistical model — known as a threshold test — that combines data from search rates of each racial group and the rate at which those searches were successful in finding contraband. The model was developed by the <a href=https://openpolicing.stanford.edu/>SOPP</a>, which has analyzed traffic stop data at dozens of law enforcement agencies across the nation.
