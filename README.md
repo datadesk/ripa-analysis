@@ -10,7 +10,7 @@ In consultation with the Stanford Open Policing Project, a Los Angeles Times ana
 
 To report the story, we filed an open records request and obtained 10 months worth of traffic stop data collected by the LAPD under the California Racial and Identity Profiling Act, which went into effect last summer.
 
-We used a statistical model — known as a threshold test — that combines data from search rates of each racial group and the rate at which those searches were successful in finding contraband. The model was developed by the <a href=https://openpolicing.stanford.edu/>SOPP</a>, which has analyzed traffic stop data at dozens of law enforcement agencies across the nation.
+We used a statistical model — known as a threshold test — that combines data from search rates of each racial group and the rate at which those searches were successful in finding contraband. The model was developed by the <a href=https://openpolicing.stanford.edu/> OPP</a>, which has analyzed traffic stop data at dozens of law enforcement agencies across the nation.
 
 The analysis showed that officers had a lower standard of evidence when deciding to search Latino and black vehicle occupants. This was true, even when excluding non-discretionary searches as the primary reason for the police action. 
 
@@ -18,7 +18,7 @@ Such searches — conducted as condition of probation or parole, after an arrest
 
 We cloned the Stanford repository and ran our own analysis. We then later shared the LAPD data with Stanford data scientist Amy Shoemaker who was kind enough to run the LAPD data through the <a href=https://5harad.com/papers/threshold-test.pdf>threshold test model</a>. She created a hierarchy filter to flag searches as discretionary or non-discretionary. The filter identifies stops where non-discretionary searches were the primary reason for the police action and categorizes those with multiple reasons for a search. If a stop included both a consent search and a vehicle inventory search it was categorized as discretionary in the analysis because a consent search is considered discretionary and given a higher rank in the hierarchy model. Shoemaker's findings for all searches and discretionary searches were consistent with our initial results, which showed lower search thresholds for non-whites.
 
-The code contained in this notebook was written by the SOPP and customized for the LAPD dataset by Shoemaker and annotated by the LA Times. We downloaded the SOPP code from their <a href=https://github.com/stanford-policylab/opp>Github page</a>.
+The code contained in this notebook was written by the SOPP and customized for the LAPD dataset by Shoemaker and annotated by the LA Times. We downloaded the OPP code from their <a href=https://github.com/stanford-policylab/opp>Github page</a>.
 
 This code uses two data sets. The first one was the <a href=https://www.dropbox.com/s/fdpk89gap9mc7ow/RIPA_MASTER_July_April.csv?dl>detailed data</a> collected by LAPD to comply with the state's Racial and Identity Profiling Act, which went effect in 2018. 
 
