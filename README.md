@@ -1,4 +1,4 @@
-# LAPD Search Threshold Test
+## Analysis: LAPD searches blacks and Latinos based on less evidence than whites
 
 ###
 
