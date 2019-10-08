@@ -22,6 +22,6 @@ The filter identifies stops where non-discretionary searches were the primary re
 
 The code contained in this notebook was written by the SOPP and customized for the LAPD dataset by Shoemaker and annotated by the LA Times. We downloaded the OPP code from their <a href=https://github.com/stanford-policylab/opp>Github page</a>.
 
-This code uses two data sets. The first one was the <a href=https://www.dropbox.com/s/fdpk89gap9mc7ow/RIPA_MASTER_July_April.csv?dl>detailed data</a> collected by LAPD to comply with the state's Racial and Identity Profiling Act, which went effect in 2018. 
+This code uses two data sets. The first one was the <a href=https://www.dropbox.com/s/fdpk89gap9mc7ow/RIPA_MASTER_July_April.csv?dl>detailed data</a> collected by LAPD to comply with the state's Racial and Identity Profiling Act, which went into effect in 2018. 
 
 The second is a data set -- available on the city's <a href=https://data.lacity.org/A-Safe-City/Vehicle-and-Pedestrian-Stop-Data-2010-to-Present/ci25-wgt7>data portal</a> -- includes information on the police division of the responding officer. The Threshold Test requires a subgeography like a police division to be able to identify differences in search thresholds across an entire city.
